@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Mappathon : Mappathon 2013 Tutorial+Examples" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Mappathon</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/brunokruse/Mappathon">View on GitHub</a>
+
+          <h1 id="project_title">Mappathon</h1>
+          <h2 id="project_tagline">Mappathon 2013 Tutorial+Examples</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/brunokruse/Mappathon/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/brunokruse/Mappathon/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <p>All examples below have been tested/compiled for OSX 10.6+</p>
+
+<h3>Processing Example</h3>
+
+<ol>
+<li><p>Download the <a href="https://syphonimplementations.googlecode.com/files/Syphon%20for%20Processing%202.0%20Public%20Beta%202%20r7.zip">Syphon Library for Processing</a></p></li>
+<li><p>Install as you would any other Processing library. In the Processing-&gt;Libraries-&gt;Syphon folder.</p></li>
+<li><p>Run example project in repo.</p></li>
+</ol><h3>openFrameworks Example</h3>
+
+<ol>
+<li>download the ofxSyphon library from <a href="https://github.com/astellato/ofxSyphon">https://github.com/astellato/ofxSyphon</a>
+</li>
+<li>expand the ofxSyphon-master.zip file</li>
+<li>open the folder that was created.</li>
+<li>delete the “testapps” directory</li>
+<li>rename the folder named “example” to “SyphonServerExample”</li>
+<li>navigate to your OF installation and find the folder called “apps”. </li>
+<li>Copy the “SyphonServerExample” folder to the “myApps” folder inside the “apps” directory</li>
+<li>copy the “ofxSyphon-master” folder to the ‘addons’ folder in your OF installation</li>
+<li>open the  Xcode project in the SyphonServerExample folder</li>
+<li>change the ‘scheme’ to ‘SyphonExample’ </li>
+<li>Expand the files in the Xcode project and select ofxSyphon</li>
+<li>control click on the oxfSyphon folder and select ‘Delete’</li>
+<li>find the ofxSyphon-master folder you moved earlier in your Finder and drag it into the ‘addons’ folder in Xcode</li>
+<li>A dialog box should appear, make sure “Copy items into destination group’s folder” is not checked, and “Create groups for any added folders” is selected and press “Finish”</li>
+<li>Follow the directions in this image to copy the syphon framework to the project <a href="https://www.dropbox.com/s/n3r388y7v5r8fg8/ofxSyphon-copy-build-phase.png">https://www.dropbox.com/s/n3r388y7v5r8fg8/ofxSyphon-copy-build-phase.png</a>
+</li>
+<li>At last! you’re ready to run the example! Press the big arrow that says “run” and the example should work. </li>
+</ol><h3>Max 6 + Jitter Example</h3>
+
+<p>NOTE : the openGL capture example will not work with Max 5 !</p>
+
+<ol>
+<li><p>Download the Max6 Syphon objects and helpfiles from here:<a href="http://syphon-implementations.googlecode.com/files/Syphon%20for%20Jitter%20Public%20Beta%202%20r2.dmg">Max6 Syphon objects and help files</a></p></li>
+<li><p>install the objects in your search path (the Cycling ‘74 directory in the Max 6 folder works)</p></li>
+<li><p><a href="https://www.dropbox.com/s/u1y1n7ymnsvtca7/SimpleJitterSyphon.maxpat">This example</a> shows how to send out a regular jitter matrix through syphon: </p></li>
+<li><p><a href="https://www.dropbox.com/s/8ib2f4st8wqd8qh/SimpleJitterGLSyphon.maxpat">This example</a> shows how to use jit.gl.node to capture a 3d context to a texture and send it out via Syphon </p></li>
+</ol>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Mappathon maintained by <a href="https://github.com/brunokruse">brunokruse</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
