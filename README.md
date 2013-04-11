@@ -41,11 +41,27 @@ A quick hack can be to use a PImage to capture the screen and use that as your c
 
 
 ### openFrameworks
+1. Clone the ofxSyphon addon into your addons folder. 
+
 <pre>
-coming soon!
+cd openFrameworks/addons/
+git clone https://github.com/astellato/ofxSyphon
 </pre>
 
-### Max+Jitter
+2. Copy the emptySyphonExample from the openFrameworks folder to your apps directory
+3. Make sure you place the example one level deep... for example:
+
 <pre>
-coming soon!
+openFrameworks->apps->mappathonExamples->emptySyphonExample
 </pre>
+
+
+### Max+Jitter
+Make sure you are using the latest version of Max 6.1
+
+1. Download the Max6 Syphon objects from: http://bit.ly/ZLnY5n
+2. Install the objects in your Cycling '74 directory (you can make a new folder for this)
+<pre>
+Applications -> Cycling '74 -> Your Folder
+</pre>
+3. Run the examples from above.
