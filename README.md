@@ -8,6 +8,9 @@ Some examples on how to get Syphon+MadMapper talking together in OSX.
 4. Download the Processing example above and copy to your Documents -> Processing folder as well.
 5. Run the examples and view the Syphon output in MadMapper.
 
+Anything drawn between canvas.beginDraw() and canvas.endDraw() will be outputted to Syphon. Remember to use server.sendImage(canvas) at the end of your sketch to send.
+
+When trying to port over more complex sketches remember are to include the 'canvas.' prefix when drawing. A quick hack can be to use a PImage and get() to capture the screen context and send that through Syphon as an image. See the image and video sketches for an example of this.
 
 <pre>
 
@@ -22,23 +25,14 @@ canvas.ellipse(x,y,32,32);
 
 // it's necessary to end the renderer with endDraw()
 canvas.endDraw();
+
 // draw the buffer in your processing window
 image(canvas, 0, 0);
+
 //send the buffer via syphon
 server.sendImage(canvas);
 
 </pre>
-
-Anything drawn between the <pre>canvas.beginDraw();</pre> and canvas.endDraw(); will be outputted to Syphon. Remember to use server.sendImage(canvas) at the end of your sketch to send.
-
-When trying to port over more complicated sketches a few things to remember are to include the 'canvas.' prefix when drawing.
-
-A quick hack can be to use a PImage to capture the screen and use that as your canvas when you 
-
-<pre>
-
-</pre>
-
 
 ### openFrameworks
 1. Clone the ofxSyphon addon into your addons folder. 
@@ -49,10 +43,10 @@ git clone https://github.com/astellato/ofxSyphon
 </pre>
 
 2. Copy the emptySyphonExample from the openFrameworks folder to your apps directory
-3. Make sure you place the example one level deep... for example:
+3. Make sure you place the example one level deep in your apps folder... for example:
 
 <pre>
-openFrameworks->apps->mappathonExamples->emptySyphonExample
+openFrameworks -> apps -> mappathonExamples -> emptySyphonExample
 </pre>
 
 
