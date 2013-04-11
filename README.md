@@ -1,7 +1,7 @@
-## Mappathon Examples
+# Mappathon Examples
 Some examples on how to get Syphon+MadMapper talking together in OSX.
 
-### Processing
+## Processing
 1. Make sure to have MadMapper and processing 2.0b8 installed.
 2. Download the Syphon processing library from here: http://bit.ly/10WhdYq
 3. Unzip and copy the 'Syphon' folder to your Documents -> Processing -> Libraries folder. (where you have your Processing sketches)
@@ -34,7 +34,7 @@ server.sendImage(canvas);
 
 </pre>
 
-### openFrameworks
+## openFrameworks
 1. Clone the ofxSyphon addon into your addons folder. 
 
 <pre>
@@ -50,7 +50,7 @@ openFrameworks -> apps -> mappathonExamples -> emptySyphonExample
 </pre>
 
 
-### Max+Jitter
+## Max+Jitter
 Make sure you are using the latest version of Max 6.1
 
 1. Download the Max6 Syphon objects from: http://bit.ly/ZLnY5n
