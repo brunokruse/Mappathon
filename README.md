@@ -6,9 +6,9 @@ Some examples on how to get Syphon+MadMapper talking together in OSX.
 2. Download the Syphon processing library from here: http://bit.ly/10WhdYq
 3. Unzip and copy the 'Syphon' folder to your Documents -> Processing -> Libraries folder. (where you have your Processing sketches)
 4. Download the Processing example above and copy to your Documents -> Processing folder as well.
-5. Run the examples and view the Syphon output in MadMapper.
+5. Run the examples and view the Syphon output via MadMapper.
 
-Anything drawn between canvas.beginDraw() and canvas.endDraw() will be outputted to Syphon. Remember to use server.sendImage(canvas) at the end of your sketch to send.
+Anything drawn between canvas.beginDraw() and canvas.endDraw() will be outputted to Syphon. Remember to use server.sendImage(canvas) at the end of your sketch to send to MaddMapper.
 
 When trying to port over more complex sketches remember are to include the 'canvas.' prefix when drawing. A quick hack can be to use a PImage and get() to capture the screen context and send that through Syphon as an image. See the image and video sketches for an example of this.
 
