@@ -41,12 +41,14 @@
 <li>Make sure to have MadMapper and processing 2.0b8 installed.</li>
 <li>Download the Syphon processing library from here: <a href="http://bit.ly/10WhdYq">http://bit.ly/10WhdYq</a>
 </li>
-<li>Unzip and copy the 'Syphon' folder to your Documents -&gt; Processing -&gt; Libraries folder. (where you have your Processing sketches)</li>
-<li>Download the Processing example above and copy to your Documents -&gt; Processing folder as well.</li>
+<li>Unzip and copy the 'Syphon' folder to your Processing libraries folder.
+<pre>Documents -&gt; Processing -&gt; Libraries</pre>
+</li>
+<li>Download the Processing example above and copy to your Processing folder as well.</li>
 <li>Run the examples and view the Syphon output via MadMapper.</li>
 </ol><p>Anything drawn between canvas.beginDraw() and canvas.endDraw() will be outputted to Syphon. Remember to use server.sendImage(canvas) at the end of your sketch to send to MaddMapper.</p>
 
-<p>When trying to port over more complex sketches remember are to include the 'canvas.' prefix when drawing. A quick hack can be to use a PImage and get() to capture the screen context and send that through Syphon as an image. See the image and video sketches for an example of this.</p>
+<p>When trying to port over more complex sketches remember to include the 'canvas.' prefix when drawing. A quick hack can be to use a PImage and get() to capture the screen context and send that through Syphon as an image. See the image and video sketches for an example of this.</p>
 
 <pre>
 
