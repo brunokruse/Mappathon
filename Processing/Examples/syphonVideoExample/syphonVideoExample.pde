@@ -30,11 +30,11 @@ void draw() {
   if (mov.available()) {
     mov.read();
     // A new time position is calculated using the current mouse location:
-    float f = map(mouseX, 0, width, 0, 1);
-    float t = mov.duration() * f;
+    //float f = map(mouseX, 0, width, 0, 1);
+    //float t = mov.duration() * f;
     mov.play();
-    mov.jump(t);
-    mov.pause();
+    //mov.jump(t);
+    //mov.pause();
   }  
 
   // draw our movie so we know what we are working with
